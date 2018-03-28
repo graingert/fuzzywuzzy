@@ -6,7 +6,7 @@ from hypothesis import given, assume, settings
 import hypothesis.strategies as st
 import pytest
 
-from fuzzywuzzy import fuzz, process, utils
+from fuzzywuzzymit import fuzz, process, utils
 
 
 HYPOTHESIS_ALPHABET = ascii_letters + digits + punctuation

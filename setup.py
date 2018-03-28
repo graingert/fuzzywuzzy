@@ -3,9 +3,9 @@
 
 # Copyright (c) 2014 SeatGeek
 
-# This file is part of fuzzywuzzy.
+# This file is part of fuzzywuzzymit.
 
-from fuzzywuzzy import __version__
+from fuzzywuzzymit import __version__
 import os
 
 try:
@@ -18,12 +18,12 @@ def open_file(fname):
     return open(os.path.join(os.path.dirname(__file__), fname))
 
 setup(
-    name='fuzzywuzzy',
+    name='fuzzywuzzymit',
     version=__version__,
     author='Adam Cohen',
     author_email='adam@seatgeek.com',
-    packages=['fuzzywuzzy'],
-    url='https://github.com/seatgeek/fuzzywuzzy',
+    packages=['fuzzywuzzymit'],
+    url='https://github.com/graingert/fuzzywuzzymit',
     license="MIT",
     classifiers=[
         'Intended Audience :: Developers',

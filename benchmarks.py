@@ -40,8 +40,8 @@ mixed_strings = [
     u"a\xac\u1234\u20ac\U00008000"
 ]
 
-common_setup = "from fuzzywuzzy import fuzz, utils; "
-basic_setup = "from fuzzywuzzy.string_processing import StringProcessor;"
+common_setup = "from fuzzywuzzymit import fuzz, utils; "
+basic_setup = "from fuzzywuzzymit.string_processing import StringProcessor;"
 
 
 def print_result_from_timeit(stmt='pass', setup='pass', number=1000000):
@@ -91,14 +91,14 @@ for s in cirque_strings:
 print 'Test process.exract(scorer =  fuzz.QRatio) for string: "%s"' % s
 print '-------------------------------'
 print_result_from_timeit('process.extract(u\'cirque du soleil\', choices, scorer =  fuzz.QRatio)',
-                             common_setup + basic_setup + " from fuzzywuzzy import process; import string,random; random.seed(18);"
+                             common_setup + basic_setup + " from fuzzywuzzymit import process; import string,random; random.seed(18);"
                              " choices = [\'\'.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(30)) for s in range(5000)]",
                               number=10)
 
 print 'Test process.exract(scorer =  fuzz.WRatio) for string: "%s"' % s
 print '-------------------------------'
 print_result_from_timeit('process.extract(u\'cirque du soleil\', choices, scorer =  fuzz.WRatio)',
-                             common_setup + basic_setup + " from fuzzywuzzy import process; import string,random; random.seed(18);"
+                             common_setup + basic_setup + " from fuzzywuzzymit import process; import string,random; random.seed(18);"
                              " choices = [\'\'.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(30)) for s in range(5000)]",
                               number=10)
 

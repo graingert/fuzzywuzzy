@@ -1,7 +1,7 @@
-.. image:: https://travis-ci.org/seatgeek/fuzzywuzzy.svg?branch=master
-    :target: https://travis-ci.org/seatgeek/fuzzywuzzy
+.. image:: https://travis-ci.org/graingert/fuzzywuzzymit.svg?branch=master
+    :target: https://travis-ci.org/graingert/fuzzywuzzymit
 
-FuzzyWuzzy
+fuzzywuzzymit
 ==========
 
 Fuzzy string matching like a boss. It uses `Levenshtein Distance <https://en.wikipedia.org/wiki/Levenshtein_distance>`_ to calculate the differences between sequences in a simple-to-use package.
@@ -25,26 +25,26 @@ Using PIP via PyPI
 
 .. code:: bash
 
-    pip install fuzzywuzzy
+    pip install fuzzywuzzymit
 
 Using PIP via Github
 
 .. code:: bash
 
-    pip install git+git://github.com/seatgeek/fuzzywuzzy.git@0.16.0#egg=fuzzywuzzy
+    pip install git+git://github.com/graingert/fuzzywuzzymit.git@0.16.0#egg=fuzzywuzzymit
 
 Adding to your ``requirements.txt`` file (run ``pip install -r requirements.txt`` afterwards)
 
 .. code:: bash
 
-    git+ssh://git@github.com/seatgeek/fuzzywuzzy.git@0.16.0#egg=fuzzywuzzy
+    git+ssh://git@github.com/graingert/fuzzywuzzymit.git@0.16.0#egg=fuzzywuzzymit
     
 Manually via GIT
 
 .. code:: bash
 
-    git clone git://github.com/seatgeek/fuzzywuzzy.git fuzzywuzzy
-    cd fuzzywuzzy
+    git clone git://github.com/graingert/fuzzywuzzymit.git fuzzywuzzymit
+    cd fuzzywuzzymit
     python setup.py install
 
 
@@ -53,8 +53,8 @@ Usage
 
 .. code:: python
 
-    >>> from fuzzywuzzy import fuzz
-    >>> from fuzzywuzzy import process
+    >>> from fuzzywuzzymit import fuzz
+    >>> from fuzzywuzzymit import process
 
 Simple Ratio
 ~~~~~~~~~~~~
@@ -112,16 +112,16 @@ You can also pass additional parameters to ``extractOne`` method to make it use 
     >>> process.extractOne("System of a down - Hypnotize - Heroin", songs, scorer=fuzz.token_sort_ratio)
         ("/music/library/good/System of a Down/2005 - Hypnotize/10 - She's Like Heroin.mp3", 61)
 
-.. |Build Status| image:: https://api.travis-ci.org/seatgeek/fuzzywuzzy.png?branch=master
-   :target: https:travis-ci.org/seatgeek/fuzzywuzzy
+.. |Build Status| image:: https://api.travis-ci.org/graingert/fuzzywuzzymit.png?branch=master
+   :target: https:travis-ci.org/graingert/fuzzywuzzymit
 
 Known Ports
 ============
 
-FuzzyWuzzy is being ported to other languages too! Here are a few ports we know about:
+fuzzywuzzymit is being ported to other languages too! Here are a few ports we know about:
 
--  Java: `xpresso's fuzzywuzzy implementation <https://github.com/WantedTechnologies/xpresso/wiki/Approximate-string-comparison-and-pattern-matching-in-Java>`_
--  Java: `fuzzywuzzy (java port) <https://github.com/xdrop/fuzzywuzzy>`_
+-  Java: `xpresso's fuzzywuzzymit implementation <https://github.com/WantedTechnologies/xpresso/wiki/Approximate-string-comparison-and-pattern-matching-in-Java>`_
+-  Java: `fuzzywuzzymit (java port) <https://github.com/xdrop/fuzzywuzzymit>`_
 -  Rust: `fuzzyrusty (Rust port) <https://github.com/logannc/fuzzyrusty>`_
 -  JavaScript: `fuzzball.js (JavaScript port) <https://github.com/nol13/fuzzball.js>`_
--  C++: `Tmplt/fuzzywuzzy <https://github.com/Tmplt/fuzzywuzzy>`_
+-  C++: `Tmplt/fuzzywuzzymit <https://github.com/Tmplt/fuzzywuzzymit>`_

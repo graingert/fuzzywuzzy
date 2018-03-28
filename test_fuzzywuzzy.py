@@ -5,10 +5,10 @@ import re
 import sys
 import pycodestyle
 
-from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
-from fuzzywuzzy import utils
-from fuzzywuzzy.string_processing import StringProcessor
+from fuzzywuzzymit import fuzz
+from fuzzywuzzymit import process
+from fuzzywuzzymit import utils
+from fuzzywuzzymit.string_processing import StringProcessor
 
 if sys.version_info[0] == 3:
     unicode = str
@@ -530,7 +530,7 @@ class TestCodeFormat(unittest.TestCase):
     def test_pep8_conformance(self):
         pep8style = pycodestyle.StyleGuide(quiet=False)
         pep8style.options.ignore = pep8style.options.ignore + tuple(['E501'])
-        pep8style.input_dir('fuzzywuzzy')
+        pep8style.input_dir('fuzzywuzzymit')
         result = pep8style.check_files()
         self.assertEqual(result.total_errors, 0, "PEP8 POLICE - WOOOOOWOOOOOOOOOO")
 

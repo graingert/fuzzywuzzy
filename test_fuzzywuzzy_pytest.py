@@ -1,4 +1,4 @@
-from fuzzywuzzy import process
+from fuzzywuzzymit import process
 
 
 def test_process_warning(capsys):

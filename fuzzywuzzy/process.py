@@ -59,7 +59,7 @@ def extractWithoutOrder(query, choices, processor=default_processor, scorer=defa
 
             lambda x: x[0]
 
-            Defaults to fuzzywuzzy.utils.full_process().
+            Defaults to fuzzywuzzymit.utils.full_process().
         scorer: Optional function for scoring matches between the query and
             an individual processed choice. This should be a function
             of the form f(query, choice) -> int.
@@ -165,7 +165,7 @@ def extract(query, choices, processor=default_processor, scorer=default_scorer, 
 
             lambda x: x[0]
 
-            Defaults to fuzzywuzzy.utils.full_process().
+            Defaults to fuzzywuzzymit.utils.full_process().
         scorer: Optional function for scoring matches between the query and
             an individual processed choice. This should be a function
             of the form f(query, choice) -> int.

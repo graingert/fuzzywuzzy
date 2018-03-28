@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -eo pipefail; [[ $RELEASE_TRACE ]] && set -x
 
-PACKAGE_NAME='fuzzywuzzy'
-INIT_PACKAGE_NAME='fuzzywuzzy'
+PACKAGE_NAME='fuzzywuzzymit'
+INIT_PACKAGE_NAME='fuzzywuzzymit'
 PUBLIC="true"
 
 # Colors
@@ -30,7 +30,7 @@ command -v rst-lint > /dev/null || {
 }
 
 set +e;
-python test_fuzzywuzzy.py &> /dev/null  # run the tests
+python test_fuzzywuzzymit.py &> /dev/null  # run the tests
 if [ ! $? -eq 0 ]; then
     echo -e "${RED}WARNING: The tests are failing.${COLOR_OFF}"
     exit 1
