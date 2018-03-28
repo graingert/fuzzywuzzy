@@ -132,7 +132,7 @@ def partial_token_sort_ratio(s1, s2, force_ascii=True, full_process=True):
 
 
 @utils.check_for_none
-def _token_set(s1, s2, partial=True, force_ascii=True, full_process=True):
+def token_set(s1, s2, partial=True, force_ascii=True, full_process=True):
     """Find all alphanumeric tokens in each string...
         - treat them as a set
         - construct two strings of the form:
@@ -184,12 +184,15 @@ def _token_set(s1, s2, partial=True, force_ascii=True, full_process=True):
     return max(pairwise)
 
 
+_token_set = token_set
+
+
 def token_set_ratio(s1, s2, force_ascii=True, full_process=True):
-    return _token_set(s1, s2, partial=False, force_ascii=force_ascii, full_process=full_process)
+    return token_set(s1, s2, partial=False, force_ascii=force_ascii, full_process=full_process)
 
 
 def partial_token_set_ratio(s1, s2, force_ascii=True, full_process=True):
-    return _token_set(s1, s2, partial=True, force_ascii=force_ascii, full_process=full_process)
+    return token_set(s1, s2, partial=True, force_ascii=force_ascii, full_process=full_process)
 
 
 ###################
