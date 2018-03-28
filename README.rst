@@ -13,7 +13,7 @@ Requirements
 -  difflib
 
 For testing
------------
+~~~~~~~~~~~
 -  pycodestyle
 -  hypothesis
 -  pytest
