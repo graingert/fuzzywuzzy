@@ -2,7 +2,7 @@
     :target: https://travis-ci.org/graingert/fuzzywuzzymit
 
 fuzzywuzzymit
-==========
+=============
 
 Fuzzy string matching like a boss. It uses `Levenshtein Distance <https://en.wikipedia.org/wiki/Levenshtein_distance>`_ to calculate the differences between sequences in a simple-to-use package.
 
