@@ -23,9 +23,8 @@ setup(
     author='Adam Cohen',
     author_email='adam@seatgeek.com',
     packages=['fuzzywuzzy'],
-    extras_require={'speedup': ['python-levenshtein>=0.12']},
     url='https://github.com/seatgeek/fuzzywuzzy',
-    license="GPL",
+    license="MIT",
     classifiers=[
         'Intended Audience :: Developers',
         'Programming Language :: Python',
