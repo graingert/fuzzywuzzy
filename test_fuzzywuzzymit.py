@@ -275,10 +275,10 @@ class RatioTest(unittest.TestCase):
         s1 = "ABCD\u00C1 HELP\u00C1"
         s2 = "ABCD HELP"
 
-        score = fuzz._token_sort(s1, s2, force_ascii=True)
+        score = fuzz.token_sort(s1, s2, force_ascii=True)
         self.assertEqual(score, 100)
 
-        score = fuzz._token_sort(s1, s2, force_ascii=False)
+        score = fuzz.token_sort(s1, s2, force_ascii=False)
         self.assertLess(score, 100)
 
 

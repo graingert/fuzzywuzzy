@@ -107,7 +107,7 @@ def _process_and_sort(s, force_ascii, full_process=True):
 #   sort those tokens and take ratio of resulting joined strings
 #   controls for unordered string elements
 @utils.check_for_none
-def _token_sort(s1, s2, partial=True, force_ascii=True, full_process=True):
+def token_sort(s1, s2, partial=True, force_ascii=True, full_process=True):
     sorted1 = _process_and_sort(s1, force_ascii, full_process=full_process)
     sorted2 = _process_and_sort(s2, force_ascii, full_process=full_process)
 
@@ -115,6 +115,9 @@ def _token_sort(s1, s2, partial=True, force_ascii=True, full_process=True):
         return partial_ratio(sorted1, sorted2)
     else:
         return ratio(sorted1, sorted2)
+
+
+_token_sort = token_sort
 
 
 def token_sort_ratio(s1, s2, force_ascii=True, full_process=True):
